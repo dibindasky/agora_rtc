@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Agora',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.green, foregroundColor: Colors.white),
+        primaryColor: Colors.green,
         useMaterial3: true,
       ),
       home: const IndexPage(),
